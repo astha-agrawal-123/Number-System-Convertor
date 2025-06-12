@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Octal Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <section class="container">
+      <div class="converter">
+        <h2>Decimal to Octal Converter</h2>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Enter Decimal Number"
+        />
+        <input type="button" value="Convert" class="result-btn" />
+      </div>
+
+      <div class="calculator">
+        <h2>Octal Calculator</h2>
+
+        <label>Number 1:</label>
+        <input type="text" id="binary1" placeholder="Enter Octal Number 1" />
+
+        <label>Number 2:</label>
+        <input type="text" id="binary2" placeholder="Enter Octal Number 2" />
+
+        <label>Operation:</label>
+        <div class="operation-icons">
+          <label class="operation-box">
+            <input type="radio" name="operation" value="add" checked />
+            <span class="op-symbol">ADD</span>
+          </label>
+          <label class="operation-box">
+            <input type="radio" name="operation" value="subtract" />
+            <span class="op-symbol">SUB</span>
+          </label>
+          <label class="operation-box">
+            <input type="radio" name="operation" value="and" />
+            <span class="op-symbol">AND</span>
+          </label>
+          <label class="operation-box">
+            <input type="radio" name="operation" value="or" />
+            <span class="op-symbol">OR</span>
+          </label>
+        </div>
+
+        <button>Calculate</button>
+      </div>
+    </section>
+
+    <section class="results-container"></section>
+    <script src="app.js"></script>
+  </body>
+</html>
